@@ -1,0 +1,42 @@
+body {
+	background-color: #f5f6f5;
+	font-family:  Arial, sans-serif;	
+	
+}
+
+.body-overflow{
+	overflow: hidden;
+}
+
+.index{
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+.btn-custom-width {
+    width: 78px !important;
+}
+
+.fixed-265-height {
+    height: 265px !important;
+}
+
+.masthead{
+	color:white; 
+	min-height: 40rem;
+	width: 100%;
+	height: 100%;
+	padding-top: 0px;
+	background: url('../images/background.jpeg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
+
+.masthead h1{
+	font-size:4rem;
+	margin: 0;
+	padding: 0;
+}

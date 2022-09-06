@@ -1,0 +1,32 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each notes}}
+            <div class="col-md-3">
+                 <div class="card text-center mt-2">
+                    <div class="card-header" style="background-color: #d3cdbd;">
+                    <a href="" target="_blank" class="text-dark">
+                            <h5 class="card-title text-uppercase">
+                                {{title}}
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="card-body">                        
+                        <p class"m-2">{{trimString text}}</p>
+                        <p>{{timeago createdAt}}</p> 
+                    </div>
+                    <div class="card-footer" style="background-color: #d3cdbd;">
+                        <a href="/notes/delete/{{id}}" class="btn btn-dark btn-sm btn-custom-width">Delete</a>
+                        <a href="/notes/edit/{{id}}" class="btn btn-dark btn-sm btn-custom-width">Edit</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <div class="col-md4 mx-auto">
+                <div class="card card-body text-center">
+                    <p>There are not notes yet.</p>
+                    <a href="/notes/add" class="text-dark">Create one!</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
